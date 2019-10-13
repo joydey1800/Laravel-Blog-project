@@ -1,6 +1,5 @@
-# Back-end developer exercise
+# I am Joy Dey.
 
-I am Joy Dey.
 
 ## Use
 I did use
@@ -15,12 +14,25 @@ I did use
 
 - social login feature which allows users to login and sign up via their Google+/Facebook/Twitter/Github accounts.
 - Allow photos to be inserted into blog posts.
-- Allow CK editing of blog posts with rich formatting support.
+- Allow ckeditor editing of blog posts with rich formatting support.
 
 
+### Link
+
+- Home page link:  ```<sitename>```
+- About page link: ```<sitename>/<about>```
+- Admin page link:     ```<sitename>/<admin>```
+- One User All Post Link: ```<sitename>/<profile>/<username>```
+- One Single Post Link: ```<sitename>/<profile>/<username>/<Post_id>```
+And I use Link verification.
+  
+  
+  
+  
 ### Configuration for social login
 
 For social login feature, we must configure .env
+[Socialite](https://laravel.com/docs/6.x/socialite)
 
 
 ```
@@ -36,11 +48,27 @@ twitter_CLIENT_SECRET =
 
 ```
 
+
+### Configuration for CKeditor [CKeditor](https://github.com/UniSharp/laravel-ckeditor)
+
+```
+composer require unisharp/laravel-ckeditor
+```
+
+
 ### Configuration for Storage
 
 I use Storage link command for Storage sortcut
 
 ```
 php artisan storage:link
+
+```
+
+
+### Configuration for Database
+
+```
+php artisan migrate
 
 ```
